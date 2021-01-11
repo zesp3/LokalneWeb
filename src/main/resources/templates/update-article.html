@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Articles - Update</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section layout:fragment="content">
+        <form action="#"
+              th:action="@{/update/{id}(id=${article.id})}"
+              th:object="${article}"
+              method="post">
+
+            <label for="artname">Tytuł</label>
+            <input type="text" th:field="*{artname}" id="artname" placeholder="Tytuł">
+            <span th:if="${#fields.hasErrors('artname')}" th:errors="*{artname}"></span>
+
+            <label for="arttext">Tekst</label>
+            <input type="text" th:field="*{arttext}" id="arttext" placeholder="Tekst">
+            <span th:if="${#fields.hasErrors('arttext')}" th:errors="*{arttext}"></span>
+
+            <label for="artimage">Obraz</label>
+            <input type="text" th:field="*{artimage}" id="artimage" placeholder="Adres obrazu">
+            <span th:if="${#fields.hasErrors('artimage')}" th:errors="*{artimage}"></span>
+
+            <label for="artsource">Źródło</label>
+            <input type="text" th:field="*{artsource}" id="artsource" placeholder="Źródło">
+            <span th:if="${#fields.hasErrors('artsource')}" th:errors="*{artsource}"></span>
+
+            <label for="artdate">Data</label>
+            <input type="text" th:field="*{artdate}" id="artdate" placeholder="Data">
+            <span th:if="${#fields.hasErrors('artdate')}" th:errors="*{artdate}"></span>
+
+            <input type="submit" value="Aktualizuj artykuł">
+        </form>
+    </section>
+</body>
+</html>

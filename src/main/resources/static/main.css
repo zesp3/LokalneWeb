@@ -1,0 +1,51 @@
+#main {
+    padding-top: 74px;
+}
+
+@media (min-width: 992px) {
+    #main {
+      padding-top: 104px;
+    }
+}
+
+
+
+body {
+  background-image: url("https://www.bip.powiattorunski.pl/grafika,45228,zamek-bierzglowski.jpg");
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #cccccc
+}
+.blog-post{
+  background-color: white;
+  padding: 10px;
+}
+
+.artimg {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smol {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75em;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* body {
+  background-image: url("https://i.imgur.com/LDMF1E2.png");
+  background-color: #cccccc;
+ } */

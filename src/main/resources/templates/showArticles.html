@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Articles</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section layout:fragment="content">
+       <th:block th:each="article : ${articles}">
+           <h2 th:case="null">Brak artykułów!</h2>
+           <div th:case="*">
+               <p class="h3" th:text="${article.artname}">Name</p>
+               <img class="artimg" th:src="${article.artimage}" alt="*FAIL - DELETE THIS*">
+               <p class="kbd" th:text="${article.artdate}">Date</p>
+               <p class="lead" th:text="${article.arttext}">Text</p>
+               <p class="smol" th:text="${article.artsource}">Source</p>
+               <p class="lead"><a th:href="@{/edit/{id}(id=${article.id})}">Edytuj</a></p>
+               <p class="lead"><a th:href="@{/delete/{id}(id=${article.id})}">Usuń</a></p>
+               <hr>
+           </div>
+        </th:block>
+    </section>
+</body>
+</html>
