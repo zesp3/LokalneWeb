@@ -1,4 +1,4 @@
-INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul pierwszy','asfasfgsfdhgfgfdfsaaSDFGHDFCXVHDS','https://i.imgur.com/exYvXmC.jpg','Imgur','2020-12-04');
-INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul drugi','dwfaegrehstdytyertwfsdfgrdfg','https://i.imgur.com/zbCmo4X.jpeg','Facebook','2020-12-02');
-INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul trzeci','fweWhrestuatsdgzfhzgrsutryead','https://i.imgur.com/gIgMR4A.jpeg','Twitter','2020-12-07');
-INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul czwarty','sgdgfadSFDGTWERdaszfgfdretwrfsd','https://i.imgur.com/2ntSPtL.jpg','Alexa','2020-12-05');
+INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul pierwszy','asfasfgsfdhgfgfdfsaaSDFGHDFCXVHDS','https://pbs.twimg.com/media/EjKoTY3XsAQ0DuX?format=jpg&name=4096x4096','Imgur','2020-12-04');
+INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul drugi','dwfaegrehstdytyertwfsdfgrdfg','https://pbs.twimg.com/media/EmQoYOZXYAA0_ex?format=jpg&name=4096x4096','Facebook','2020-12-02');
+INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul trzeci','fweWhrestuatsdgzfhzgrsutryead','https://pbs.twimg.com/media/ElRWe_hWkAUz2Nb?format=jpg&name=4096x4096','Twitter','2020-12-07');
+INSERT INTO articles (artname, arttext, artimage, artsource, artdate) VALUES ('Artykul czwarty','sgdgfadSFDGTWERdaszfgfdretwrfsd','https://pbs.twimg.com/media/EbcyMMxXkAI7diU?format=jpg&name=medium','Alexa','2020-12-05');
